@@ -2,6 +2,7 @@
 define newrelic::php::newrelic_ini (
   $newrelic_license_key,
   $exec_path,
+  $newrelic_ini_appname,
 ) {
 
   exec { "/usr/bin/newrelic-install ${name}":
